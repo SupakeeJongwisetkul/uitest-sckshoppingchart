@@ -42,15 +42,15 @@ ${url}   https://www.google.com/
 
 ชำระค่าสินค้า
     [Arguments]    ${credit_Id}    ${cvv_Id}    ${endTime_Id}   
-    Element Text Should Be       id=country_Id     ${credit_Id}
-    Element Text Should Be       id=province_Id     ${cvv_Id}
-    Element Text Should Be       id=district_Id     ${endTime_Id}
+    Element Text Should Be       id=credit_Id     ${credit_Id}
+    Element Text Should Be       id=cvv_Id     ${cvv_Id}
+    Element Text Should Be       id=endTime_Id     ${endTime_Id}
     
 
 ชำระค่าสินค้าสำเร็จ
     [Arguments]    ${priceNumber_Id}    ${pointGetNumber_Id}   
     Click Element        id=confirm
-    Wait Until Element Contains    id=product_Id    ${priceNumber_Id}
-    Element Text Should Be       id=country_Id     ${priceNumber_Id}
-    Element Text Should Be       id=province_Id     ${pointGetNumber_Id}
+    Wait Until Element Contains    id=priceNumber_Id    ${priceNumber_Id}
+    Element Text Should Be       id=priceNumber_Id     ${priceNumber_Id}
+    Element Text Should Be       id=priceNumber_Id     ${pointGetNumber_Id}
 
