@@ -33,18 +33,18 @@ ${url}   https://www.google.com/
 ตรวจสอบที่อยู่ในการจัดส่ง
     [Arguments]    ${country_Id}    ${province_Id}    ${district_Id}   ${Subdistrict_Id}    ${houseNumber_Id}   ${postCode_Id}
     Wait Until Element Contains    id=country_Id    ${country_Id}
-    Element Text Should Be       id=country_Id     ${country_Id}
-    Element Text Should Be       id=province_Id     ${province_Id}
-    Element Text Should Be       id=district_Id     ${district_Id}
-    Element Text Should Be       id=Subdistrict_Id     ${Subdistrict_Id}
-    Element Text Should Be       id=houseNumber_Id     ${houseNumber_Id}
-    Element Text Should Be       id=postCode_Id     ${postCode_Id}
+    Input Text       id=country_Id     ${country_Id}
+    Input Text       id=province_Id     ${province_Id}
+    Input Text     id=district_Id     ${district_Id}
+    Input Text      id=Subdistrict_Id     ${Subdistrict_Id}
+    Input Text      id=houseNumber_Id     ${houseNumber_Id}
+    Input Text     id=postCode_Id     ${postCode_Id}
 
 ชำระค่าสินค้า
     [Arguments]    ${credit_Id}    ${cvv_Id}    ${endTime_Id}   
-    Element Text Should Be       id=credit_Id     ${credit_Id}
-    Element Text Should Be       id=cvv_Id     ${cvv_Id}
-    Element Text Should Be       id=endTime_Id     ${endTime_Id}
+    Input Text      id=credit_Id     ${credit_Id}
+    Input Text     id=cvv_Id     ${cvv_Id}
+    Input Text       id=endTime_Id     ${endTime_Id}
     
 
 ชำระค่าสินค้าสำเร็จ
