@@ -28,7 +28,7 @@ Library    SeleniumLibrary
     Element Text Should Be       id=priceNumber_Id     50
     Element Text Should Be       id=priceNumber_Id     ฿21,540.00
 
-    Wait Until Element Contains    id=country_Id    ไทย
+    
     Input Text        id=country_Id     ไทย
     Input Text        id=province_Id     นนทบุรีย์
     Input Text        id=district_Id     บางใหญ่ 
@@ -41,6 +41,5 @@ Library    SeleniumLibrary
     Input Text        id=endTime_Id     02/27
     
     Click Element        id=confirm
-    Wait Until Element Contains    id=priceNumber_Id    ฿21,540.00
     Element Text Should Be       id=priceNumber_Id     ฿21,540.00
     Element Text Should Be       id=priceNumber_Id     215
