@@ -32,7 +32,7 @@ ${url}   https://www.google.com/
     Element Text Should Be       id=priceNumber_Id     ${productPoine}
 ตรวจสอบที่อยู่ในการจัดส่ง
     [Arguments]    ${country_Id}    ${province_Id}    ${district_Id}   ${Subdistrict_Id}    ${houseNumber_Id}   ${postCode_Id}
-    Wait Until Element Contains    id=country_Id    ${country_Id}
+    
     Input Text       id=country_Id     ${country_Id}
     Input Text       id=province_Id     ${province_Id}
     Input Text     id=district_Id     ${district_Id}
